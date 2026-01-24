@@ -22,8 +22,3 @@ Manage your **daily income and expenses** and track your balance in real-time.
 
 ---
 
-## Screenshots
-![App Screenshot](screenshot.png)
-
----
-
