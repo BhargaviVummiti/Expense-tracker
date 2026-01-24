@@ -1,0 +1,127 @@
+/* Reset and body styling */
+body {
+  background:bisque;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+/* Header */
+h2 {
+  margin-bottom:25px;
+  color:black;
+}
+
+/* Balance */
+.balance h4 {
+  margin: 0;
+  font-weight:600;
+  color: #555;
+}
+.balance h1 {
+  margin: 10px;
+  font-size: 30px;
+}
+
+/* Summary Section */
+.summary {
+  display: flex;
+  justify-content:space-between;
+  margin: 20px 0;
+}
+.summary div {
+  width: 48%;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.money.plus {
+  color:green;
+  font-weight: bold;
+}
+.money.minus {
+  color: red;
+  font-weight: bold;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  padding: 10px;
+  border: none;
+  background: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background:green;
+}
+
+/* Transaction List */
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.list li.plus {
+  border-right: 5px solid green;
+}
+.list li.minus {
+  border-right: 5px solid red;
+}
+.list li button {
+  background:red;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list li button:hover {
+  background: #cc0000;
+}
+
+/* Responsive */
+@media (min-width:320px) and (max-width:425px) {
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+  .summary {
+    flex-direction:column;
+    gap: 10px;
+  }
+  .summary div {
+    width:93%;
+  }
+}
